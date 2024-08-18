@@ -88,6 +88,7 @@ export const TodoItem: React.FC<Props> = ({
           onChange={() => changeTodo({ ...todo, completed: !todo.completed })}
           disabled={isLoadingTodos}
         />
+        <span className="todo__status-text">2 items left</span>
       </label>
 
       {inputIsEditing ? (

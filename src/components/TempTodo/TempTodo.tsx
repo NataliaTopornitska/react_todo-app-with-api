@@ -10,6 +10,7 @@ export const TempTodo: React.FC<Props> = ({ tempTodo }) => {
     <div data-cy="Todo" className="todo">
       <label className="todo__status-label">
         <input data-cy="TodoStatus" type="checkbox" className="todo__status" />
+        <span className="todo__status-text">2 items left</span>
       </label>
 
       <span data-cy="TodoTitle" className="todo__title">
