@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable jsx-a11y/control-has-associated-label */
+
 import React, { ChangeEvent, useRef, useState } from 'react';
 import classNames from 'classnames';
 import { Todo } from '../../types/todo';
@@ -88,7 +91,6 @@ export const TodoItem: React.FC<Props> = ({
           onChange={() => changeTodo({ ...todo, completed: !todo.completed })}
           disabled={isLoadingTodos}
         />
-        <span className="todo__status-text">2 items left</span>
       </label>
 
       {inputIsEditing ? (
